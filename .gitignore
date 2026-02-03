@@ -1,0 +1,6 @@
+data/raw/
+results/*.png
+results/*.jpg
+results/*.pth
+__pycache__/
+.ipynb_checkpoints/

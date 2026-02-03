@@ -1,0 +1,16 @@
+# Project Configuration
+model:
+  name: "U-Net-Attention"
+  in_channels: 2  # VV and VH bands
+  num_classes: 4  # Building, Road, Vegetation, Water
+  filters: [64, 128, 256, 512]
+
+training:
+  batch_size: 16
+  learning_rate: 0.0001
+  epochs: 50
+  device: "cuda"  # or "cpu"
+
+data:
+  resolution: "low" # Targeted 10m-20m resolution
+  train_split: 0.8
